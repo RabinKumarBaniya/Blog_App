@@ -1,7 +1,7 @@
 import { Alert, Button, Modal, TextInput } from 'flowbite-react'
 import { useState } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import { updateStart,updateSuccess,updateFailure,deleteUserStart,deleteUserSuccess,deleteUserFailure } from '../redux/user/userSlice';
+import { updateStart,updateSuccess,updateFailure,deleteUserStart,deleteUserSuccess,deleteUserFailure ,signoutSuccess} from '../redux/user/userSlice';
 import {HiOutlineExclamationCircle} from 'react-icons/hi';
 
 
@@ -62,6 +62,22 @@ export default function DashProfile() {
     } catch (error) {
       dispatch(deleteUserFailure(error.message));
     }
+  };
+
+  const handleSignout = async () => {
+    try {
+      const res = await fetch('/api/user/signout', {
+        method: 'POST',
+      });
+      const data = await res.json();
+      if(!res.ok) {
+        console.log(data.message);
+      } else {
+        dispatch(signoutSuccess());
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   return (
@@ -80,7 +96,7 @@ export default function DashProfile() {
       </form>
       <div className='text-red-500 flex justify-between mt-5'>
         <span onClick={()=>setShowModal(true)} className='cursor-pointer'>Delete Account</span>
-        <span className='cursor-pointer'>Sign Out</span>
+        <span onClick={handleSignout} className='cursor-pointer'>Sign Out</span>
       </div>
       {updateUserSuccess && (
         <Alert color='success' className='mt-5'>
