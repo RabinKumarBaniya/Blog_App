@@ -8,7 +8,7 @@ export default function CallToAction() {
     <div className='flex-1 justify-center flex flex-col sm:items-center sm:text-center'>
         <h2 className='text-2xl'>Rabin Kumar Baniya</h2>
         <p className='text-gray-500 my-2'> 
-            Designing and Developing Web Applications 
+            Enthusiastic Designing and Developing Web Application
         </p>
         <Button className='bg-red-500 text-white rounded-tl-xl rounded-bl-none '>
             <a href="http://www.rabinkumarbaniya.com.np/" target='_blank' rel='noopener noreferrer'>Check out Portfolio</a>
