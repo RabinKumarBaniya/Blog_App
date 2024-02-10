@@ -62,7 +62,7 @@ export default function FooterComponent() {
             <div className='w-full sm:flex sm:items-center sm:justify-between'>
                 <Footer.Copyright href='#' by="Rabba's Blog" year={new Date().getFullYear()} />
                 <div className='flex gap-6 sm:mt-0 mt-4 sm:justify-center'>
-                    <Footer.Icon href='#' icon={BsFacebook} />
+                    <Footer.Icon href='https://www.facebook.com/RabinKrBaniya/' icon={BsFacebook} />
                     <Footer.Icon href='mailto:rabinkrbaniya09@gmail.com'  icon={BsEnvelope} />
                     <Footer.Icon href='https://github.com/RabinKumarBaniya' icon={BsGithub} />
                     <Footer.Icon href='https://www.linkedin.com/in/rabin-kumar-baniya-156b45237' icon={BsLinkedin} />

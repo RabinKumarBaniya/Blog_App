@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CallToAction from '../components/CallToAction';
+import HomeToAction from '../components/HomeToAction';
 import PostCard from '../components/PostCard';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         </p>
       </div>
       <div className='p-3 bg-amber-50'>
-        <CallToAction />
+        <HomeToAction />
       </div>
       <div className='max-w-9xl mx-auto p-14 flex flex-col gap-8 py-7'>
         {
