@@ -1,4 +1,4 @@
-import { Navbar, TextInput,Button, Dropdown, Avatar } from 'flowbite-react';
+import { Navbar,Button, Dropdown, Avatar } from 'flowbite-react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 import {AiOutlineSearch} from 'react-icons/ai';
@@ -34,11 +34,6 @@ export default function Header() {
       <Link to="/">
         <img src={Logo} alt="logo" className="w-40 h-auto" />
       </Link>
-      <form>
-        <TextInput type='text' placeholder='search' rightIcon={AiOutlineSearch}
-        className='hidden lg:inline'
-        />
-      </form>
       <Button className='w-12 h-10 lg:hidden' color='gray' pill>
         <AiOutlineSearch />
       </Button>
