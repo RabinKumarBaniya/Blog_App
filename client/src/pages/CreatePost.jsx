@@ -86,7 +86,7 @@ export default function CreatePost() {
                     <option value="uncategorized">Select a category</option>
                     <option value="javascript">JavaScript</option>
                     <option value="reactjs">ReactJs</option>
-                    <option value="reactjs">Personal</option>
+                    <option value="personal">Personal</option>
                 </Select>
             </div>
             <div className='flex gap-4 items-center justify-between border-4 border-red-500 border-dotted p-3'>
