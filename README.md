@@ -1,5 +1,5 @@
 Project Overview
-Welcome to the project! This web application is built using React.js and Tailwind CSS for front-end design, React Router Dom for dynamic page navigation, and Redux Toolkit for efficient state management. Also implemented authentication using JSON Web Tokens and Google OAuth integration for user authentication.
+This web application is built using React.js and Tailwind CSS for front-end design, React Router Dom for dynamic page navigation, and Redux Toolkit for efficient state management. Also implemented authentication using JSON Web Tokens and Google OAuth integration for user authentication.
 
 Features:
 Secure Authentication: Utilizing JSON Web Tokens and Google OAuth integration for secure user authentication.
